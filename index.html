@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luca Cozzi — Full-Stack Developer</title>
+    <meta name="description" content="Portfolio di Luca Cozzi, giovane sviluppatore full-stack. Front-end, back-end, automazioni e chatbot.">
+    <meta name="author" content="Luca Cozzi">
+    <meta property="og:title" content="Luca Cozzi — Full-Stack Developer">
+    <meta property="og:description" content="Portfolio di Luca Cozzi, giovane sviluppatore full-stack specializzato in HTML, CSS, JavaScript, Python e automazioni.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-text">
+            <span class="loader-letter">L</span>
+            <span class="loader-letter">U</span>
+            <span class="loader-letter">C</span>
+            <span class="loader-letter">A</span>
+            <span class="loader-dot">.</span>
+        </div>
+        <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <a href="#hero" class="nav-logo">LC<span class="nav-logo-dot">.</span></a>
+        <div class="nav-links" id="nav-links">
+            <a href="#about" class="nav-link" data-index="01">Chi Sono</a>
+            <a href="#skills" class="nav-link" data-index="02">Competenze</a>
+            <a href="#projects" class="nav-link" data-index="03">Progetti</a>
+            <a href="#contact" class="nav-link" data-index="04">Contatti</a>
+        </div>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-content">
+            <a href="#about" class="mobile-link">Chi Sono</a>
+            <a href="#skills" class="mobile-link">Competenze</a>
+            <a href="#projects" class="mobile-link">Progetti</a>
+            <a href="#contact" class="mobile-link">Contatti</a>
+            <div class="mobile-social">
+                <a href="https://github.com/cozzils" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.instagram.com/cozzi2008/" target="_blank" rel="noopener">Instagram</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-content">
+            <div class="hero-badge reveal">
+                <span class="hero-badge-dot"></span>
+                Disponibile per collaborazioni
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-line reveal">
+                    <span class="hero-word">Ciao, sono</span>
+                </span>
+                <span class="hero-line reveal">
+                    <span class="hero-name hero-name-full">Luca Cozzi<span class="hero-accent">.</span></span>
+                </span>
+            </h1>
+            <p class="hero-subtitle reveal">
+                <span id="typed-text"></span><span class="typed-cursor">|</span>
+            </p>
+            <div class="hero-cta reveal">
+                <a href="#projects" class="btn btn-primary">
+                    <span>Vedi i Progetti</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg>
+                </a>
+                <a href="#contact" class="btn btn-outline">Contattami</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="hero-scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee">
+        <div class="marquee-track">
+            <!-- 1 -->
+            <span class="marquee-item">Full-Stack Developer</span>
+            <span class="marquee-separator">✦</span>
+            <span class="marquee-item">Front-End</span>
+            <span class="marquee-separator">✦</span>
+            <span class="marquee-item">Back-End</span>
+            <span class="marquee-separator">✦</span>
+            <span class="marquee-item">Automazioni</span>
+            <span class="marquee-separator">✦</span>
+            <span class="marquee-item">Chatbot</span>
+            <span class="marquee-separator">✦</span>
+            <!-- 2 -->
+            <span class="marquee-item">Full-Stack Developer</span>
+            <span class="marquee-separator">✦</span>
+            <span class="marquee-item">Front-End</span>
+            <span class="marquee-separator">✦</span>
+            <span class="marquee-item">Back-End</span>
+            <span class="marquee-separator">✦</span>
+            <span class="marquee-item">Automazioni</span>
+            <span class="marquee-separator">✦</span>
+            <span class="marquee-item">Chatbot</span>
+            <span class="marquee-separator">✦</span>
+            <!-- 3 -->
+            <span class="marquee-item">Full-Stack Developer</span>
+            <span class="marquee-separator">✦</span>
+            <span class="marquee-item">Front-End</span>
+            <span class="marquee-separator">✦</span>
+            <span class="marquee-item">Back-End</span>
+            <span class="marquee-separator">✦</span>
+            <span class="marquee-item">Automazioni</span>
+            <span class="marquee-separator">✦</span>
+            <span class="marquee-item">Chatbot</span>
+            <span class="marquee-separator">✦</span>
+            <!-- 4 -->
+            <span class="marquee-item">Full-Stack Developer</span>
+            <span class="marquee-separator">✦</span>
+            <span class="marquee-item">Front-End</span>
+            <span class="marquee-separator">✦</span>
+            <span class="marquee-item">Back-End</span>
+            <span class="marquee-separator">✦</span>
+            <span class="marquee-item">Automazioni</span>
+            <span class="marquee-separator">✦</span>
+            <span class="marquee-item">Chatbot</span>
+            <span class="marquee-separator">✦</span>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-index">01</span>
+                <h2 class="section-title">Chi<br>Sono</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <div class="about-image-frame">
+                        <img src="profile.jpg" alt="Luca Cozzi" loading="lazy">
+                        <div class="about-image-overlay"></div>
+                    </div>
+                    <div class="about-image-decoration"></div>
+                </div>
+                <div class="about-text">
+                    <p class="about-intro reveal">
+                        Sono un <strong>giovane sviluppatore full-stack</strong> con la passione per creare esperienze digitali complete — dal front-end al back-end.
+                    </p>
+                    <p class="about-description reveal">
+                        Mi occupo di sviluppo web, automazioni e creazione di chatbot. Lavoro con tecnologie moderne per costruire soluzioni funzionali, performanti e dal design curato.
+                    </p>
+                    <p class="about-description reveal">
+                        Ho conseguito il <strong>Diploma Professionale di Tecnico Informatico</strong> presso il CFP Zanardelli (4° anno — indirizzo Informatica), dove ho consolidato le mie competenze tecniche e la mia determinazione a crescere nel mondo dello sviluppo.
+                    </p>
+                    <div class="about-stats reveal">
+                        <div class="stat">
+                            <span class="stat-number" data-target="5">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Linguaggi</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="4">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Strumenti</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="2">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Progetti Live</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-index">02</span>
+                <h2 class="section-title">Le mie<br>Competenze</h2>
+            </div>
+            <div class="skills-grid">
+                <!-- Linguaggi -->
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
+                        <h3>Linguaggi</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">TypeScript</span>
+                    </div>
+                </div>
+                <!-- Strumenti -->
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                        </div>
+                        <h3>Strumenti</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">pgAdmin</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                    </div>
+                </div>
+                <!-- Automazioni -->
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <h3>Automazioni</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Chatbot</span>
+                        <span class="skill-tag">n8n</span>
+                        <span class="skill-tag">Workflow Automation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-index">03</span>
+                <h2 class="section-title">Progetti<br>Selezionati</h2>
+            </div>
+            <div class="projects-list">
+                <!-- Project 1 -->
+                <a href="https://github.com/cozzils/abitare-la-differenza" target="_blank" rel="noopener" class="project-card reveal" id="project-1">
+                    <div class="project-card-inner">
+                        <div class="project-info">
+                            <span class="project-number">01</span>
+                            <h3 class="project-title">Abitare la Differenza</h3>
+                            <p class="project-desc">Web app sviluppata con Vite e TypeScript. Un progetto che esplora il tema dell'inclusione e della diversità attraverso un'esperienza digitale interattiva.</p>
+                            <div class="project-tags">
+                                <span>TypeScript</span>
+                                <span>Vite</span>
+                                <span>CSS</span>
+                                <span>HTML</span>
+                            </div>
+                        </div>
+                        <div class="project-arrow">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg>
+                        </div>
+                    </div>
+                    <div class="project-line"></div>
+                </a>
+                <!-- Project 2 -->
+                <a href="https://cozzils.github.io/BS11-BILIARDINO/" target="_blank" rel="noopener" class="project-card reveal" id="project-2">
+                    <div class="project-card-inner">
+                        <div class="project-info">
+                            <span class="project-number">02</span>
+                            <h3 class="project-title">BS11 Biliardino</h3>
+                            <p class="project-desc">Landing page per un evento del Gruppo Scout Brescia 11 — serata con torneo di biliardino, cena e karaoke. Sistema di prenotazioni integrato per i partecipanti.</p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="project-arrow">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg>
+                        </div>
+                    </div>
+                    <div class="project-line"></div>
+                </a>
+                <!-- Project 3 – Coming Soon -->
+                <div class="project-card project-card-soon reveal" id="project-3">
+                    <div class="project-card-inner">
+                        <div class="project-info">
+                            <span class="project-number">03</span>
+                            <h3 class="project-title">Prossimamente</h3>
+                            <p class="project-desc">Un nuovo progetto è in fase di sviluppo. Resta connesso per scoprire di cosa si tratta.</p>
+                            <div class="project-tags">
+                                <span>Coming Soon</span>
+                            </div>
+                        </div>
+                        <div class="project-soon-badge">
+                            <span>In arrivo</span>
+                        </div>
+                    </div>
+                    <div class="project-line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Marquee -->
+    <div class="marquee marquee-contact">
+        <div class="marquee-track marquee-reverse">
+            <!-- 1 -->
+            <span class="marquee-item marquee-big">Lavoriamo Insieme</span>
+            <span class="marquee-separator">✦</span>
+            <span class="marquee-item marquee-big">Contattami</span>
+            <span class="marquee-separator">✦</span>
+            <!-- 2 -->
+            <span class="marquee-item marquee-big">Lavoriamo Insieme</span>
+            <span class="marquee-separator">✦</span>
+            <span class="marquee-item marquee-big">Contattami</span>
+            <span class="marquee-separator">✦</span>
+            <!-- 3 -->
+            <span class="marquee-item marquee-big">Lavoriamo Insieme</span>
+            <span class="marquee-separator">✦</span>
+            <span class="marquee-item marquee-big">Contattami</span>
+            <span class="marquee-separator">✦</span>
+            <!-- 4 -->
+            <span class="marquee-item marquee-big">Lavoriamo Insieme</span>
+            <span class="marquee-separator">✦</span>
+            <span class="marquee-item marquee-big">Contattami</span>
+            <span class="marquee-separator">✦</span>
+            <!-- 5 -->
+            <span class="marquee-item marquee-big">Lavoriamo Insieme</span>
+            <span class="marquee-separator">✦</span>
+            <span class="marquee-item marquee-big">Contattami</span>
+            <span class="marquee-separator">✦</span>
+            <!-- 6 -->
+            <span class="marquee-item marquee-big">Lavoriamo Insieme</span>
+            <span class="marquee-separator">✦</span>
+            <span class="marquee-item marquee-big">Contattami</span>
+            <span class="marquee-separator">✦</span>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-index">04</span>
+                <h2 class="section-title">Restiamo<br>in Contatto</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-text reveal">
+                    <p>Hai un progetto in mente o vuoi semplicemente fare due chiacchiere? Scrivimi — sono sempre aperto a nuove collaborazioni e opportunità.</p>
+                </div>
+                <div class="contact-links">
+                    <a href="mailto:cozziluca1@gmail.com" class="contact-link reveal" id="contact-email">
+                        <div class="contact-link-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </div>
+                        <div class="contact-link-info">
+                            <span class="contact-link-label">Email</span>
+                            <span class="contact-link-value">cozziluca1@gmail.com</span>
+                        </div>
+                        <div class="contact-link-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg>
+                        </div>
+                    </a>
+                    <a href="tel:+393714253750" class="contact-link reveal" id="contact-phone">
+                        <div class="contact-link-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                        </div>
+                        <div class="contact-link-info">
+                            <span class="contact-link-label">Telefono</span>
+                            <span class="contact-link-value">+39 371 425 3750</span>
+                        </div>
+                        <div class="contact-link-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg>
+                        </div>
+                    </a>
+                    <a href="https://github.com/cozzils" target="_blank" rel="noopener" class="contact-link reveal" id="contact-github">
+                        <div class="contact-link-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </div>
+                        <div class="contact-link-info">
+                            <span class="contact-link-label">GitHub</span>
+                            <span class="contact-link-value">@cozzils</span>
+                        </div>
+                        <div class="contact-link-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/cozzi2008/" target="_blank" rel="noopener" class="contact-link reveal" id="contact-instagram">
+                        <div class="contact-link-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </div>
+                        <div class="contact-link-info">
+                            <span class="contact-link-label">Instagram</span>
+                            <span class="contact-link-value">@cozzi2008</span>
+                        </div>
+                        <div class="contact-link-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <span class="footer-logo">LC<span class="footer-logo-dot">.</span></span>
+                    <p class="footer-copy">&copy; 2025 Luca Cozzi. Tutti i diritti riservati.</p>
+                </div>
+                <div class="footer-right">
+                    <a href="https://github.com/cozzils" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://www.instagram.com/cozzi2008/" target="_blank" rel="noopener">Instagram</a>
+                    <a href="mailto:cozziluca1@gmail.com">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
